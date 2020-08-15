@@ -92,10 +92,11 @@ Here are basic steps to run an algorithm and understanding as to what is in the 
        
  3. These following hyperparameters are set to a default but you can change them depending on your liking like this
  
-       | First Header  | Second Header |
+       | Parameter | Description |
        | ------------- | ------------- |
-       | Content Cell  | Content Cell  |
-       | Content Cell  | Content Cell  |
+       | alpha | step size parameter, value between [0,1]  |
+       | gamma | discount factor, value between [0,1]  |
+       | beta | other step size parameter, value between [0.5,1]  |
      
    Example:
                   
