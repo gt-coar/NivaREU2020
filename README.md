@@ -86,7 +86,7 @@ Here are basic steps to run an algorithm and understanding as to what is in the 
        
    Example:
        
-                  matrix = [[1,[2,4]],[2,[2,3]]] 2x2x2
+                  matrix = [[[1,[2,4]],[2,[2,3]]] 2x2x2
        
                   learner.setRewardMatrix(matrix)
        
