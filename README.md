@@ -36,7 +36,7 @@ Here are basic steps to run an algorithm and understanding as to what is in the 
         
         Example: 
         
-        policy = {0: {0: 0.4835164835164835, 1: 0.5164835164835165}, 1: {0: 0.48854961832061067, 1: 0.5114503816793893}, 2: {0: 0.881578947368421, 1: 0.11842105263157894}}
+                policy = {0: {0: 0.4835164835164835, 1: 0.5164835164835165}, 1: {0: 0.48854961832061067, 1: 0.5114503816793893}, 2: {0: 0.881578947368421, 1: 0.11842105263157894}}
     
     2. Call the Class based on the name in the file
     
@@ -80,8 +80,7 @@ Here are basic steps to run an algorithm and understanding as to what is in the 
 
             learner. setVpi(v_pi)
          
-         
-    2. the reward matrix has also been set by default to have random values between [0,1] to change this call the setRewardMatrix() function
+2. the reward matrix has also been set by default to have random values between [0,1] to change this call the setRewardMatrix() function
     
        must be in shape AxSxS where A is the action space, S is the state space
        
@@ -91,8 +90,7 @@ Here are basic steps to run an algorithm and understanding as to what is in the 
        
                   learner.setRewardMatrix(matrix)
        
-       
-    3. These following hyperparameters are set to a default but you can change them depending on your liking 
+ 3. These following hyperparameters are set to a default but you can change them depending on your liking 
     
     
     
