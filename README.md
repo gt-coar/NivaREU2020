@@ -23,7 +23,9 @@ Each algorithm is separated into different files
      You need the following libraries:
      
      numpy
+     
      matplotlib
+     
      mdptoolbox
      
      To install:
