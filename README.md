@@ -17,15 +17,10 @@ Here are basic steps to run an algorithm and understanding as to what is in the 
      | File Name | Algorithm/Method |
      | ----------- | ------------------ |
      | TDonMDP.ipynb | On-Policy TD(0) 
-  
      | OffPolicyTD(0).ipynb | Off-Policy TD(0) with importance sampling |
-  
      | SynchronousTD.ipynb | Synchronous On-Policy TD(0) |
-  
      | OnPolicyn-stepTD.ipynb | On-Policy n-step TD |
-  
      | TDn-StepbySampling.ipynb | Off-Policy n-step TD with Importance Sampling |
-  
      | V-trace.ipynb | V-trace algorithm |
       
       
