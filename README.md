@@ -46,7 +46,7 @@ Here are basic steps to run an algorithm and understanding as to what is in the 
        
        Example:
     
-       learner = TDLearner(policy = policy,states = states, actions = actions,iterations = iterations)
+                  learner = TDLearner(policy = policy,states = states, actions = actions,iterations = iterations)
     
     3. Next Run the Environment
            
@@ -56,7 +56,7 @@ Here are basic steps to run an algorithm and understanding as to what is in the 
        
        Example: 
        
-       learner.runEnvironment()
+                  learner.runEnvironment()
        
        
     4. To see the results or need to do some debugging of the algorithm call the plot function
@@ -65,19 +65,20 @@ Here are basic steps to run an algorithm and understanding as to what is in the 
        
        Example:
        
-       learner.plot()
+                  learner.plot()
        
        
  Other extra stuff 
-      1. Note that in all algorithm files the estimate Vπ has been estimated through value iteration and set as default, but if you found your own Vπ then you can change it by calling the setVi() function
  
-         Vπ must have length of the state space S
+1. Note that in all algorithm files the estimate Vπ has been estimated through value iteration and set as default, but if you found your own Vπ then you can change it by calling the setVi() function
  
-         Example: 
+   Vπ must have length of the state space S
  
-         v_pi = [1,2,3,4]
- 
-         learner. setVpi(v_pi)
+   Example: 
+
+            v_pi = [1,2,3,4]
+
+            learner. setVpi(v_pi)
          
          
     2. the reward matrix has also been set by default to have random values between [0,1] to change this call the setRewardMatrix() function
@@ -86,9 +87,9 @@ Here are basic steps to run an algorithm and understanding as to what is in the 
        
        Example:
        
-       matrix = [[1,[2,4]],[2,[2,3]]] 2x2x2
+                  matrix = [[1,[2,4]],[2,[2,3]]] 2x2x2
        
-       learner.setRewardMatrix(matrix)
+                  learner.setRewardMatrix(matrix)
        
        
     3. These following hyperparameters are set to a default but you can change them depending on your liking 
