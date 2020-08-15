@@ -6,7 +6,7 @@ The code goes through different Temporal Difference Learning methods
 
 
 
-To get started:
+# To get started:
 Each algorithm is separated into different files
 
 Here are basic steps to run an algorithm and understanding as to what is in the file
@@ -68,7 +68,7 @@ Here are basic steps to run an algorithm and understanding as to what is in the 
                   learner.plot()
        
        
- Other extra stuff 
+# Other extra stuff 
  
 1. Note that in all algorithm files the estimate Vπ has been estimated through value iteration and set as default, but if you found your own Vπ then you can change it by calling the setVi() function
  
@@ -82,16 +82,25 @@ Here are basic steps to run an algorithm and understanding as to what is in the 
          
 2. the reward matrix has also been set by default to have random values between [0,1] to change this call the setRewardMatrix() function
     
-       must be in shape AxSxS where A is the action space, S is the state space
+   must be in shape AxSxS where A is the action space, S is the state space
        
-       Example:
+   Example:
        
                   matrix = [[1,[2,4]],[2,[2,3]]] 2x2x2
        
                   learner.setRewardMatrix(matrix)
        
- 3. These following hyperparameters are set to a default but you can change them depending on your liking 
-    
+ 3. These following hyperparameters are set to a default but you can change them depending on your liking like this
+ 
+       Parameter | alpha | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
+--- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269 
+     
+       Example:
+                  
+                  learner = TDLearner(policy = policy,states = states, actions = actions,iterations = iterations, alpha = 0.0001)
+                  
+              
     
     
     
