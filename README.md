@@ -20,21 +20,21 @@ Each algorithm is separated into different files
         
                pip3 install library name
                
-     You need the following libraries:
-     
-     numpy
-     
-     matplotlib
-     
-     mdptoolbox
-     
-     To install:
-     
-               pip3 install numpy
-               
-               pip3 install matplotlib
-               
-               pip3 install pymdptoolbox
+          You need the following libraries:
+
+          numpy
+
+          matplotlib
+
+          mdptoolbox
+
+          To install:
+
+                    pip3 install numpy
+
+                    pip3 install matplotlib
+
+                    pip3 install pymdptoolbox
 
 Here are basic steps to run an algorithm and understanding as to what is in the file
 
