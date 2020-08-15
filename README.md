@@ -9,6 +9,31 @@ The code goes through different Temporal Difference Learning methods
 # To get started:
 Each algorithm is separated into different files
 
+
+# Download and Install Everything Necessary
+
+1. Must have Python 3 or above
+2. Must have Anaconda installed on your computer or laptop 
+3. Install all the appropriate libraries
+     1. either install them to your computer by
+        on command line type  or before the code is run in the Anaconda IDE
+        
+               pip3 install library name
+               
+     You need the following libraries:
+     
+     numpy
+     matplotlib
+     mdptoolbox
+     
+     To install:
+     
+               pip3 install numpy
+               
+               pip3 install matplotlib
+               
+               pip3 install pymdptoolbox
+
 Here are basic steps to run an algorithm and understanding as to what is in the file
 
 1. Choose the algorithm and then choose that file
