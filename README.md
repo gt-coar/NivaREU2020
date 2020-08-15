@@ -13,17 +13,20 @@ Here are basic steps to run an algorithm and understanding as to what is in the 
 
 1. Choose the algorithm and then choose that file
 
-      TDonMDP.ipynb is On-Policy TD(0)
+
+     | File Name | Algorithm/Method |
+     | ----------- | ------------------ |
+     | TDonMDP.ipynb | On-Policy TD(0) 
   
-      OffPolicyTD(0).ipynb is Off-Policy TD(0) with importance sampling
+     | OffPolicyTD(0).ipynb | Off-Policy TD(0) with importance sampling |
   
-      SynchronousTD.ipynb is Synchronous On-Policy TD(0)
+     | SynchronousTD.ipynb | Synchronous On-Policy TD(0) |
   
-      OnPolicyn-stepTD.ipynb is On-Policy n-step TD
+     | OnPolicyn-stepTD.ipynb | On-Policy n-step TD |
   
-      TDn-StepbySampling.ipynb is Off-Policy n-step TD with Importance Sampling ]
+     | TDn-StepbySampling.ipynb | Off-Policy n-step TD with Importance Sampling |
   
-      V-trace.ipynb is V-trace algorithm
+     | V-trace.ipynb | V-trace algorithm |
       
       
 2. Each file has a very basic way to run
