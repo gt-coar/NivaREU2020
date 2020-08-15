@@ -94,9 +94,19 @@ Here are basic steps to run an algorithm and understanding as to what is in the 
  
        | Parameter | Description |
        | ------------- | ------------- |
+       | states | REQUIRED, amount of states in the MDP |
+       | actions | REQUIRED, amount of actions in MDP|
+       | policy | REQUIRED, the mapping of states to action to use for the agent|
        | alpha | step size parameter, value between [0,1]  |
        | gamma | discount factor, value between [0,1]  |
        | beta | other step size parameter, value between [0.5,1]  |
+       | iterations | amount of iterations to run in the environment |
+       | episodes | if n-step only, amount of episodes to run in the environment |
+       | n-step | only for n-step algorithms, n value for number of steps to look ahead |
+       | diminish | if diminishing step size wanted, input the function for calculating the step size|
+       | c_bar | only for v-trace, the truncated c value |
+       | rho_bar | only for v-trace, the truncated rho value 
+       
      
    Example:
                   
@@ -104,7 +114,44 @@ Here are basic steps to run an algorithm and understanding as to what is in the 
                   
               
     
-    
+4. For Diminishing Step Size
+      
+      equation must be given in a function object format, with three parameters, alpha, t timestep, and beta
+      
+      in python there are two possibilities
+      
+      
+      1. create the function
+      
+      
+             def diminish(alpha, t, beta):
+                        return alpha/beta**t
+                        
+                        
+             learner = TDLearner(policy = policy,states = states, actions = actions,iterations = iterations, diminish = diminish)  
+      
+      2.use a lambda function
+      
+      
+      
+            diminish = lambda alpha,t,beta: alpha/beta**t
+            
+            
+            learner = TDLearner(policy = policy,states = states, actions = actions,iterations = iterations, diminish = diminish) 
+            
+            
+      if nothing is given then it is assumed that constant step size of alpha is used
+      
+      
+      
+      
+ That is everything needed to know about my code
+ 
+ It is very simple! 
+ 
+            
+      
+            
     
     
     
