@@ -92,11 +92,12 @@ Here are basic steps to run an algorithm and understanding as to what is in the 
        
  3. These following hyperparameters are set to a default but you can change them depending on your liking like this
  
-       Parameter | alpha | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
---- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
-Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269 
+       | First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
      
-       Example:
+   Example:
                   
                   learner = TDLearner(policy = policy,states = states, actions = actions,iterations = iterations, alpha = 0.0001)
                   
